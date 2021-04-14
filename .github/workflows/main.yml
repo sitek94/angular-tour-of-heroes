@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: deploy_dist
-            path: dist
+          path: dist
 
   deploy:
     name: Deploy
@@ -58,4 +58,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages 
-          folder: dist/angular-tour-of-heroes
+          folder: deploy_dist/angular-tour-of-heroes
